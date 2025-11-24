@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>The Beatles | Contacto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="./imagenes/logo-beatles.jpg" alt="The Beatles">
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label">☰</label>
+
+      <nav class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="quienes-somos.html">Quiénes somos</a>
+        <a href="contacto.html" class="active">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <h1>Contacto</h1>
+        <p>Envíanos tus comentarios sobre el sitio o sobre la banda.</p>
+
+        <form class="contact-form" action="LINK_DEL_DOCENTE" method="POST">
+
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="200">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required maxlength="200">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required maxlength="200">
+          </div>
+
+          <div class="form-group">
+            <label for="contenido">Contenido</label>
+            <textarea id="contenido" name="contenido" required maxlength="1000" rows="6"></textarea>
+          </div>
+
+          <button type="submit" class="btn">Enviar</button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="./imagenes/footer.jpg" alt="mural beatles">
+    <div class="container">
+      <p>Sitio homenaje a The Beatles · Trabajo académico</p>
+      <p>Paul no está muerto</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+
